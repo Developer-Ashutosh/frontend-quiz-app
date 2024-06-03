@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Rubik;
+  src: url('../public/Rubik-VariableFont.woff2');
+}
+
+html.dark body {
+  background-image: url('../public/bg-pattern-dark.svg');
+}
+
+html.light body {
+  background-image: url('../public/bg-pattern-light.svg');
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
