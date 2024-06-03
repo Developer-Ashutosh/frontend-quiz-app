@@ -46,6 +46,10 @@ const Battleground = ({ questions, updateScore, endQuiz }) => {
                       : "pending"
                   )
                 );
+                if (!state.includes("correct"))
+                  setState((state) =>
+                    state.map((s, i) => (i === answer ? "correct" : s))
+                  );
               }
               if (type === "next") {
                 setType("submit");

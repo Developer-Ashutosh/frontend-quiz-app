@@ -100,7 +100,7 @@ const button = ({
             <span className="h-7 w-7 flex-shrink-0">
               <img
                 src={`./icon-${state}.svg`}
-                alt="Correct Icon"
+                alt={`${state.charAt(0).toUpperCase() + state.slice(1)} Icon`}
                 className="h-full w-full"
               />
             </span>
