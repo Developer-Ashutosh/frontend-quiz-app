@@ -9,13 +9,13 @@ const Home = ({ subjects, setSubject, levels, setLevel }) => {
 
   return (
     <>
-      <section className="w-full flex flex-col gap-6 max-[1120px]:text-center max-[1120px]:gap-4 max-[1120px]:m-auto">
+      <section className="w-full flex flex-col gap-6 max-[1120px]:text-center max-[1120px]:gap-4 max-[1120px]:m-auto max-[530px]:gap-2.5">
         <Title desc={"Welcome to the"} semi={"Frontend Quiz!"} />
         <P desc={instruction} />
       </section>
 
       <section
-        className="flex flex-col gap-6 max-[1120px]:m-auto"
+        className="flex flex-col gap-6 max-[1120px]:m-auto max-[530px]:gap-4"
         onClick={(e) => {
           const elem = e.target;
           if (

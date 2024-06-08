@@ -15,7 +15,7 @@ const App = () => {
   return (
     <>
       <Header subject={subject} />
-      <main className="w-full flex items-start justify-between gap-14 px-28 max-[1350px]:px-16 max-[1120px]:flex-col max-[1120px]:gap-8">
+      <main className="w-full flex items-start justify-between gap-14 px-28 max-[1350px]:px-16 max-[1120px]:flex-col max-[1120px]:gap-8 max-[580px]:px-10 max-[530px]:px-4">
         {level === null ? (
           <Home
             subjects={subjects}

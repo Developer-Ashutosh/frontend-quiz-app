@@ -10,13 +10,13 @@ const Battleground = ({ questions, updateScore, endQuiz }) => {
 
   return (
     <>
-      <section className="w-full flex flex-col gap-6 max-[1120px]:text-center max-[1120px]:gap-4 max-[1120px]:m-auto">
+      <section className="w-full flex flex-col gap-6 max-[1120px]:text-center max-[1120px]:gap-4 max-[1120px]:m-auto max-[530px]:gap-3">
         <P desc={`question ${qn + 1} of ${questions.length}`} />
         <Title desc={question} type="question" />
         <ProgressBar width={qn + 1} length={questions.length} />
       </section>
 
-      <section className="flex flex-col gap-6 max-[1120px]:m-auto">
+      <section className="flex flex-col gap-6 max-[1120px]:m-auto max-[530px]:gap-4">
         {options.map((option, i) => (
           <Button
             key={`#${qn}${i}`}

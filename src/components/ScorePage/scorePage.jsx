@@ -9,9 +9,9 @@ const ScorePage = ({ subject, score, highScore, playAgain }) => {
       </section>
 
       <section className="flex flex-col gap-6 max-[1120px]:m-auto">
-        <div className="flex items-center justify-center flex-col gap-4 px-4 h-96 w-[32rem] min-w-96 rounded-xl transition-transform shadow-lg lg:hover:shadow-black/20 max-[1350px]:w-[30rem] max-[1120px]:w-[35rem] max-[690px]:w-[28rem] bg-secondary dark:bg-darkSecondary">
+        <div className="flex items-center justify-center flex-col gap-4 px-4 h-96 w-[32rem] rounded-xl transition-transform shadow-lg lg:hover:shadow-black/20 max-[1350px]:w-[30rem] max-[1120px]:w-[35rem] max-[690px]:w-[28rem] max-[530px]:h-80 max-[530px]:w-[25rem] max-[530px]:gap-1 max-[430px]:w-[22rem] max-[385px]:w-80 max-[350px]:w-72 bg-secondary dark:bg-darkSecondary">
           {subject !== "" && (
-            <div className="flex items-center justify-center flex-col gap-4">
+            <div className="flex items-center justify-center flex-col gap-4 max-[530px]:gap-2.5">
               <span className="rounded-lg bg-primary p-3.5">
                 <img
                   src={`./icon-${subject.toLowerCase()}.svg`}
